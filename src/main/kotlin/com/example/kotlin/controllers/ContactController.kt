@@ -25,9 +25,9 @@ class ContactController {
 
     @PostMapping
     fun create(@RequestBody contact: Contact): Contact {
-        if(contact.name == "João Balsalobre") {
+        if(contact.name == "João Teste") {
             contact.apply {
-                this.name = "Meu pai"
+                this.name = "João T."
             }
         }
 
